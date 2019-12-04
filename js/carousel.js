@@ -1,5 +1,7 @@
+// This flag is declared to check whether number of times 'addImagesToCarousel' funnction is run. If it is the first time, active class should be added to the dots and carousel images
 let flag = 0;
 
+// The images to be used in carousel are stored in the form of javascript object array
 let carouselImageData = [
   {
     name: 01,
@@ -33,6 +35,7 @@ let carouselImageData = [
   }
 ];
 
+// This function adds images to the carouselImageData. This is called in the array.map function
 addImagesToCarousel = object => {
   if (flag == false) {
     // To increase the carousel dots
@@ -74,4 +77,5 @@ addImagesToCarousel = object => {
   }
 };
 
+// Each element from the 'carouselImageData' array is mapped and the 'addImagesToCarousel'function is performed
 carouselImageData.map(addImagesToCarousel);
