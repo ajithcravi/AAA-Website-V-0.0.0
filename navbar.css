@@ -1,0 +1,30 @@
+/* Navigationbar background color changed to grey */
+.mainContainer--colour-grey--paddingRight-5px {
+  background-color: #f5f5f5;
+  padding-right: 5px;
+}
+
+/* Logo dimension */
+.navbar-brand__logo--size {
+  max-height: 50px;
+  max-width: 88.9px;
+}
+
+/* Navigationbar items */
+.nav-item--font--margin {
+  font-family: Helvetica !important;
+  margin-left: 1em;
+  margin-top: 1.1em;
+}
+
+/* Navigationbar active item */
+.active-nav--color {
+  color: #ff0202 !important;
+}
+
+/* <---------- Summary ----------> */
+
+/* .mainContainer -----> The container that contains the whole Navigationbar */
+/* .navbar-brand__logo -----> The logo image of the Navigationbar */
+/* .nav-item -----> Each navigation item of the Navigationbar */
+/* .active-nav--color -----> Activated item of the Navigationbar */
