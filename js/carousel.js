@@ -1,39 +1,14 @@
 // This flag is declared to check whether number of times 'addImagesToCarousel' funnction is run. If it is the first time, active class should be added to the dots and carousel images
 let flag = 0;
 
-// The images to be used in carousel are stored in the form of javascript object array
-let carouselImageData = [
-  {
-    name: 01,
-    url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439792/AAA/Main%20Carousel/01_ayfowk.jpg"
-  },
-  {
-    name: 02,
-    url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439792/AAA/Main%20Carousel/02_ag5ucz.jpg"
-  },
-  {
-    name: 05,
-    url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439791/AAA/Main%20Carousel/05_gfvgfu.jpg"
-  },
-  {
-    name: 06,
-    url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439793/AAA/Main%20Carousel/06_ewmvfs.jpg"
-  },
-  {
-    name: 07,
-    url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439793/AAA/Main%20Carousel/07_awlkwx.jpg"
-  },
-  {
-    name: 09,
-    url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439792/AAA/Main%20Carousel/09_dkd57j.jpg"
-  }
-];
+//Fetch the details of the images to be used in main carousel from the cloudinary cdn
+fetch(
+  "http://res.cloudinary.com/ajithvault/raw/upload/v1575472700/AAA/Data/carouselImages_kzwtiy.json"
+)
+  .then(response => response.json())
+  .then(data => localStorage.setItem("carouselData", JSON.stringify(data)));
+
+let carouselImageData = JSON.parse(localStorage.getItem("carouselData"));
 
 // This function adds images to the carouselImageData. This is called in the array.map function
 addImagesToCarousel = object => {

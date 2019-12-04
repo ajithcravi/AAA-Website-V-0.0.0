@@ -1,0 +1,122 @@
+.title {
+  color: white;
+  font-size: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.projectDiv {
+  width: 45em;
+  height: 25.3125em;
+  position: relative;
+  display: inline-flex;
+}
+.twoProjectOverlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 70%;
+  background-color: black;
+  width: 45em;
+  height: 5em;
+}
+.twoProjectRowImage {
+  width: 45em;
+  height: 25.3125em;
+  /* filter: grayscale(1); */
+  transition: 0.5s ease;
+}
+.twoProjectRowImage:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+}
+.threeProjectRow {
+  width: 30em;
+  height: 16.875em;
+  /* filter: grayscale(1); */
+  transition: 0.5s ease;
+}
+.threeProjectRow:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+}
+
+@media (max-width: 1470px) {
+  .projectDiv {
+    width: 33.75em;
+    height: 18.984375em;
+  }
+  .twoProjectOverlay {
+    width: 33.75em;
+    height: 3.75em;
+  }
+  .twoProjectRowImage {
+    width: 33.75em;
+    height: 18.984375em;
+  }
+  .threeProjectRow {
+    width: 22.5em;
+    height: 12.65625em;
+  }
+}
+
+@media (max-width: 1110px) {
+  .projectDiv {
+    width: 22.5em;
+    height: 12.65625em;
+  }
+  .twoProjectOverlay {
+    width: 22.5em;
+    height: 2.5em;
+  }
+  .twoProjectRowImage {
+    width: 22.5em;
+    height: 12.65625em;
+  }
+  .threeProjectRow {
+    width: 15em;
+    height: 8.4375em;
+  }
+
+  @media (max-width: 750px) {
+    .projectDiv {
+      width: 11.25em;
+      height: 6.328125em;
+    }
+    .twoProjectOverlay {
+      width: 11.25em;
+      height: 1.25em;
+    }
+    .twoProjectRowImage {
+      width: 11.25em;
+      height: 6.328125em;
+    }
+    .threeProjectRow {
+      width: 7.5em;
+      height: 4.21875em;
+    }
+  }
+  @media (max-width: 450px) {
+    .projectDiv {
+      width: 11.25em;
+      height: 6.328125em;
+    }
+    .twoProjectOverlay {
+      width: 11.25em;
+      height: 1.25em;
+    }
+    .twoProjectRowImage {
+      width: 11.25em;
+      height: 6.328125em;
+    }
+    .threeProjectRow {
+      width: 11.25em;
+      height: 6.328125em;
+    }
+  }
+}
