@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AAA-Navigation</title>
+    <!-- Bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- Font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/e1e8e053d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css"
+    />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+    <!-- Custom stylesheets -->
+    <!-- Navigationbar stylesheet -->
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <!-- Individual project stylesheet -->
+    <link rel="stylesheet" href="../css/individualProject.css" />
+  </head>
+  <body>
+    <!-- Navigationbar -->
+    <div class="container-fluid mainContainer--colour-grey--paddingRight-5px">
+      <nav class="navbar navbar-expand-md navbar-light ticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              class="navbar-brand__logo--size"
+              src="https://res.cloudinary.com/ajithvault/image/upload/v1575434482/AAA/AAA_Logo_2019_For_Email_Signs_vepg8b.png"
+              alt="AAA Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item nav-item--font--margin active">
+                <a
+                  class="nav-link active-nav active-nav--color"
+                  href="../index.html"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item nav-item--font--margin">
+                <a class="nav-link" href="./projects.html">
+                  Projects
+                </a>
+              </li>
+              <li class="nav-item nav-item--font--margin">
+                <a class="nav-link" href="./about.html">
+                  About
+                </a>
+              </li>
+              <li class="nav-item nav-item--font--margin">
+                <a class="nav-link" href="./team.html">
+                  Team
+                </a>
+              </li>
+              <li class="nav-item nav-item--font--margin">
+                <a class="nav-link" href="./contact.html">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Gallery section -->
+    <div class="individualProject">
+      <div class="gallery">
+        <div class="card">
+          <img
+            id="0"
+            class="card-img-top preview"
+            src=""
+            alt="preview"
+            srcset=""
+          />
+        </div>
+        <div
+          class="uk-position-relative uk-visible-toggle uk-light thumbnailDiv"
+          tabindex="-1"
+          uk-slider
+        >
+          <ul
+            class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m "
+          >
+            <li>
+              <img
+                id="1"
+                class="thumbnail"
+                onclick="preview(this);"
+                src="https://res.cloudinary.com/ajithvault/image/upload/v1575287901/AAA/project1_g0xjiy.jpg"
+                alt="preview"
+                srcset=""
+              />
+            </li>
+            <li>
+              <img
+                id="2"
+                class="thumbnail"
+                onclick="preview(this);"
+                src="https://res.cloudinary.com/ajithvault/image/upload/v1575287898/AAA/project2_x6smqb.webp"
+                alt="preview"
+                srcset=""
+              />
+            </li>
+            <li>
+              <img
+                id="3"
+                class="thumbnail"
+                onclick="preview(this);"
+                src="https://res.cloudinary.com/ajithvault/image/upload/v1575287904/AAA/project3_ikjvfg.jpg"
+                alt="preview"
+                srcset=""
+              />
+            </li>
+            <li>
+              <img
+                id="4"
+                class="thumbnail"
+                onclick="preview(this);"
+                src="https://res.cloudinary.com/ajithvault/image/upload/v1575287901/AAA/project1_g0xjiy.jpg"
+                alt="preview"
+                srcset=""
+              />
+            </li>
+            <li>
+              <img
+                id="9"
+                class="thumbnail"
+                onclick="preview(this);"
+                src="https://res.cloudinary.com/ajithvault/image/upload/v1575287904/AAA/project3_ikjvfg.jpg"
+                alt="preview"
+                srcset=""
+              />
+            </li>
+            <li>
+              <img
+                id="8"
+                class="thumbnail"
+                onclick="preview(this);"
+                src="https://res.cloudinary.com/ajithvault/image/upload/v1575287898/AAA/project2_x6smqb.webp"
+                alt="preview"
+                srcset=""
+              />
+            </li>
+            <li>
+              <img
+                id="7"
+                class="thumbnail"
+                onclick="preview(this);"
+                src="https://res.cloudinary.com/ajithvault/image/upload/v1575287901/AAA/project1_g0xjiy.jpg"
+                alt="preview"
+                srcset=""
+              />
+            </li>
+            <li>
+              <img
+                id="6"
+                class="thumbnail"
+                onclick="preview(this);"
+                src="https://res.cloudinary.com/ajithvault/image/upload/v1575287904/AAA/project3_ikjvfg.jpg"
+                alt="preview"
+                srcset=""
+              />
+            </li>
+            <li>
+              <img
+                id="5"
+                class="thumbnail"
+                onclick="preview(this);"
+                src="https://res.cloudinary.com/ajithvault/image/upload/v1575287898/AAA/project2_x6smqb.webp"
+                alt="preview"
+                srcset=""
+              />
+            </li>
+            <li>
+              <img
+                id="10"
+                class="thumbnail"
+                onclick="preview(this);"
+                src="https://res.cloudinary.com/ajithvault/image/upload/v1575287904/AAA/project3_ikjvfg.jpg"
+                alt="preview"
+                srcset=""
+              />
+            </li>
+          </ul>
+
+          <a
+            class="uk-position-center-left uk-position-small thumbnailSliderArrow"
+            href="#"
+            uk-slidenav-previous
+            uk-slider-item="previous"
+          ></a>
+          <a
+            class="uk-position-center-right uk-position-small thumbnailSliderArrow"
+            href="#"
+            uk-slidenav-next
+            uk-slider-item="next"
+          ></a>
+        </div>
+      </div>
+      <div class="projectDetails">
+        Vanakkam da mapla... Indha pakkathula irundhu
+      </div>
+    </div>
+    <!-- Bootstrap scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom script -->
+    <script src="../js/individualProject.js"></script>
+  </body>
+</html>

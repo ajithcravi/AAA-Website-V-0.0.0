@@ -6,32 +6,32 @@ let carouselImageData = [
   {
     name: 1,
     url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439792/AAA/Main%20Carousel/01_ayfowk.jpg"
+      "https://res.cloudinary.com/ajithvault/image/upload/q_auto/v1575439792/AAA/Main%20Carousel/01_ayfowk.jpg"
   },
   {
     name: 2,
     url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439792/AAA/Main%20Carousel/02_ag5ucz.jpg"
+      "https://res.cloudinary.com/ajithvault/image/upload/q_auto/v1575439792/AAA/Main%20Carousel/02_ag5ucz.jpg"
   },
   {
     name: 3,
     url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439791/AAA/Main%20Carousel/05_gfvgfu.jpg"
+      "https://res.cloudinary.com/ajithvault/image/upload/q_auto/v1575439791/AAA/Main%20Carousel/05_gfvgfu.jpg"
   },
   {
     name: 4,
     url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439793/AAA/Main%20Carousel/06_ewmvfs.jpg"
+      "https://res.cloudinary.com/ajithvault/image/upload/q_auto/v1575439793/AAA/Main%20Carousel/06_ewmvfs.jpg"
   },
   {
     name: 5,
     url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439793/AAA/Main%20Carousel/07_awlkwx.jpg"
+      "https://res.cloudinary.com/ajithvault/image/upload/q_auto/v1575439793/AAA/Main%20Carousel/07_awlkwx.jpg"
   },
   {
     name: 6,
     url:
-      "https://res.cloudinary.com/ajithvault/image/upload/v1575439792/AAA/Main%20Carousel/09_dkd57j.jpg"
+      "https://res.cloudinary.com/ajithvault/image/upload/q_auto/v1575439792/AAA/Main%20Carousel/09_dkd57j.jpg"
   }
 ];
 

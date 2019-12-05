@@ -1,0 +1,39 @@
+.individualProject {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 2.85em;
+  margin-right: 2.85em;
+}
+
+.gallery {
+  margin-top: 2.85em;
+  width: 60vw;
+}
+.uk-child-width-1-2 > * {
+  width: 8.89em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+}
+
+.thumbnailSliderArrow {
+  color: white !important;
+}
+.thumbnail {
+  height: 5em;
+  width: 8.89em;
+}
+.thumbnail:hover {
+  cursor: pointer;
+}
+
+.selected {
+  height: 5em;
+  width: 8.89em;
+  border-bottom: 2px solid #ff0202;
+}
+
+.projectDetails {
+  margin-top: 2.85em;
+}
