@@ -1,29 +1,21 @@
-/* Two projects row */
-/* Giving margin to the whole division that holds the project tiles */
-.projectTilesContainer {
-  margin-left: 1vw;
-}
-
 /* Making the container that holds two tiles as a flex container and giving margin */
 .twoProjectRow {
-  margin-top: 1vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 3em;
+  margin-right: 2.6em;
 }
 
 /* Making the container that holds the image tile same in size to the image */
 .twoProjectTile {
-  margin-right: 1vw;
-  width: 46.5vw;
-  height: 26.15625vw;
-  position: relative;
-  display: inline-flex;
+  margin-top: 3em;
+  width: 45vw;
 }
 
-/* Assigning values to the tile image */
+/* Assigning values to the tile image  */
 .twoProjectRowImage {
-  width: 46.5vw;
-  height: 26.15625vw;
   filter: grayscale(1);
   transition: 0.5s ease;
 }
@@ -31,12 +23,11 @@
 /* Giving the overlay effect and hiding it by assigning the height to 0 */
 .twoProjectOverlay {
   position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  right: 0em;
+  left: 0em;
+  bottom: 0em;
   opacity: 70%;
   background-color: black;
-  width: 46.5vw;
   height: 0;
   transition: 0.5s ease;
 }
@@ -44,16 +35,6 @@
 /* Assigning value to the project title */
 .twoProjectTitle {
   display: none;
-  color: white;
-  font-size: 14px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  transition: 0.5s ease;
 }
 
 /* Assigning hovering effects to the tile */
@@ -63,56 +44,12 @@
 }
 
 .twoProjectTile:hover .twoProjectOverlay {
-  height: 4vw;
+  height: 4em;
 }
 
 .twoProjectTile:hover .twoProjectTitle {
   display: block;
-}
-
-/* Three projects row */
-/* Making the container that holds three tiles as a flex container and giving margin */
-.threeProjectRow {
-  margin-top: 1vw;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Making the container that holds the image tile same in size to the image */
-.threeProjectTile {
-  margin-right: 1vw;
-  width: 30.7vw;
-  height: 17.26875vw;
-  position: relative;
-  display: inline-flex;
-}
-
-/* Assigning values to the tile image */
-.threeProjectRowImage {
-  width: 30.7vw;
-  height: 17.26875vw;
-  filter: grayscale(1);
-  transition: 0.5s ease;
-}
-
-/* Giving the overlay effect and hiding it by assigning the height to 0 */
-.threeProjectOverlay {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  opacity: 70%;
-  background-color: black;
-  width: 30.7vw;
-  height: 0;
-  transition: 0.5s ease;
-}
-
-/* Assigning value to the project title */
-.threeProjectTitle {
-  display: none;
   color: white;
-  font-size: 1vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -123,6 +60,45 @@
   transition: 0.5s ease;
 }
 
+/* Making the container that holds three tiles as a flex container and giving margin */
+.threeProjectRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 3em;
+  margin-right: 2.6em;
+}
+
+/* Making the container that holds the image tile same in size to the image */
+.threeProjectTile {
+  margin-top: 3em;
+  width: 28.9vw;
+}
+
+/* Assigning values to the tile image */
+.threeProjectRowImage {
+  filter: grayscale(1);
+  transition: 0.5s ease;
+}
+
+/* Giving the overlay effect and hiding it by assigning the height to 0 */
+.threeProjectOverlay {
+  position: absolute;
+  right: 0em;
+  left: 0em;
+  bottom: 0em;
+  opacity: 70%;
+  background-color: black;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+/* Assigning value to the project title */
+.threeProjectTitle {
+  display: none;
+}
+
 /* Assigning hovering effects to the tile */
 .threeProjectTile:hover .threeProjectRowImage {
   cursor: pointer;
@@ -130,9 +106,45 @@
 }
 
 .threeProjectTile:hover .threeProjectOverlay {
-  height: 4vw;
+  height: 4em;
 }
 
 .threeProjectTile:hover .threeProjectTitle {
   display: block;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+  .twoProjectTile {
+    margin-top: 3em !important;
+    width: 90vw;
+  }
+  .threeProjectTile {
+    margin-top: 3em !important;
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .twoProjectTile {
+    margin-top: 2em;
+  }
+  .threeProjectTile {
+    margin-top: 2em;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .twoProjectTile {
+    margin-top: 1em;
+  }
+  .threeProjectTile {
+    margin-top: 1em;
+  }
 }
