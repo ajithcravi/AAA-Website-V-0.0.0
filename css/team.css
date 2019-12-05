@@ -11,3 +11,9 @@
   margin-top: 3em;
   border: none;
 }
+
+@media only screen and (max-width: 680px) {
+  .team {
+    justify-content: space-around;
+  }
+}
