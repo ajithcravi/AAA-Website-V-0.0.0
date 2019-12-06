@@ -47,7 +47,7 @@ const staffDetails = [
     },
     {
       name: "Kusuma L",
-      designation: "Principal Architect",
+      designation: "Project Architect",
       url:
         "http://res.cloudinary.com/ajithvault/image/upload/q_auto/v1575531508/AA%20Office%20Staff%20Photos%20Final/KUSUMA_L_PROJECT_ARCHITECT_04_cx7h5o.jpg"
     },
