@@ -150,7 +150,6 @@ console.log(staffDetails);
 for (i = 0; i < staffDetails.length; i++) {
   $("#teamContainer").append(`<div id="team${i}" class="team"></div>`);
   for (j = 0; j < staffDetails[i].length; j++) {
-    console.log("Vanakkam da mapla");
     $(`#team${i}`).append(`<div class="card teamCard">
       <img
         src=${staffDetails[i][j].url}
