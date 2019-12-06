@@ -1,3 +1,7 @@
+#individualProject {
+  display: none;
+}
+
 .individualProject {
   display: flex;
   flex-direction: row;
@@ -9,7 +13,7 @@
 
 .gallery {
   margin-top: 2.85em;
-  width: 60vw;
+  width: 60.5em;
 }
 .uk-child-width-1-2 > * {
   width: 8.89em;
@@ -29,11 +33,73 @@
 }
 
 .selected {
-  height: 5em;
-  width: 8.89em;
   border-bottom: 2px solid #ff0202;
 }
 
-.projectDetails {
+.projectDescription {
   margin-top: 2.85em;
+  margin-left: 2em;
+  width: 24em;
+}
+
+@media only screen and (max-width: 1440px) {
+  .gallery {
+    width: 56em;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .gallery {
+    width: 43em;
+  }
+}
+@media only screen and (max-width: 1290px) {
+  .gallery {
+    width: 47em;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .gallery {
+    width: 32em;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .gallery {
+    width: 32em;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .gallery {
+    width: 42em;
+  }
+
+  .projectDescription {
+    width: 42em;
+    margin-left: 0;
+    margin-bottom: 2.85em;
+  }
+
+  .thumbnail {
+    height: 3em;
+    width: 5.33em;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .gallery {
+    width: 20em;
+  }
+
+  .projectDescription {
+    width: 20em;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .gallery {
+    width: 18em;
+  }
+
+  .projectDescription {
+    width: 18em;
+    margin-left: 0;
+  }
 }
