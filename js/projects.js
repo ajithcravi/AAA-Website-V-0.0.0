@@ -409,28 +409,28 @@ renderProjectTiles = () => {
       );
     } else if (i === 3 || i === 8 || i === 13 || i === 18) {
       $(`#threeProjectRow${i - 1}`).append(`<div class="card threeProjectTile">
-      <img
-        class="card-img-top threeProjectRowImage"
-        src="${projectDetails[i].images[0]}"
-        alt="project${i + 1}"
-        onclick="openGallery(${i});"
-      />
-      <div class="threeProjectOverlay">
-        <div class="threeProjectTitle">${projectDetails[i].projectName}</div>
-      </div>
-    </div>}`);
+            <img
+            class="card-img-top threeProjectRowImage"
+            src="${projectDetails[i].images[0]}"
+            alt="project${i + 1}"
+            onclick="openGallery(${i});"
+          />
+          <div class="threeProjectOverlay">
+          <div class="threeProjectTitle">${projectDetails[i].projectName}</div>
+          </div>
+        </div>`);
     } else if (i === 4 || i === 9 || i === 14 || i === 19) {
       $(`#threeProjectRow${i - 2}`).append(`<div class="card threeProjectTile">
-    <img
-      class="card-img-top threeProjectRowImage"
-      src="${projectDetails[i].images[0]}"
-      alt="project${i + 1}"
-      onclick="openGallery(${i});"
-    />
-    <div class="threeProjectOverlay">
-      <div class="threeProjectTitle">${projectDetails[i].projectName}</div>
-    </div>
-  </div>}`);
+            <img
+            class="card-img-top threeProjectRowImage"
+            src="${projectDetails[i].images[0]}"
+            alt="project${i + 1}"
+            onclick="openGallery(${i});"
+          />
+          <div class="threeProjectOverlay">
+          <div class="threeProjectTitle">${projectDetails[i].projectName}</div>
+          </div>
+        </div>`);
     }
   }
 };
