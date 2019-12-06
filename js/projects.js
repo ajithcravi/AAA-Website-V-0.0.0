@@ -401,7 +401,7 @@ renderProjectTiles = () => {
             />
             <div class="threeProjectOverlay">
               <div class="threeProjectTitle">${
-                projectDetails[i].projectName
+                ProjectDetails[i].projectName
               }</div>
             </div>
           </div>
@@ -419,7 +419,7 @@ renderProjectTiles = () => {
         <div class="threeProjectTitle">${projectDetails[i].projectName}</div>
       </div>
     </div>}`);
-    } else if (i === 4 || i === 9 || i === 14 || i === 19) {
+    } else if (i === 4 || i === 9 || i === 14 || i === +19) {
       $(`#threeProjectRow${i - 2}`).append(`<div class="card threeProjectTile">
     <img
       class="card-img-top threeProjectRowImage"
