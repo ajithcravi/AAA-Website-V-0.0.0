@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="../index.css" />
     <!-- Navigationbar stylesheet -->
     <link rel="stylesheet" href="../css/navbar.css" />
+    <!-- COntact stylesheet -->
+    <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
     <!-- Navigationbar -->
@@ -79,6 +81,129 @@
         </div>
       </nav>
     </div>
+    <!--- Map -->
+    <div class="container-fluid container-fluid--flex">
+      <div class="contactAndFormDiv">
+        <div class="contactDetailsDiv">
+          <div class="contactDetail">
+            <h5>Address</h5>
+            #1A (3rd flr) 10th Cross, 11th Main, <br />
+            Hal 2nd Stage, Bengaluru 560008
+          </div>
+          <div class="contactDetail">
+            <h5>Phone</h5>
+            90350-20001 <br />
+            98865-20685
+          </div>
+        </div>
+        <div class="contactDetailsDiv">
+          <div class="contactDetail">
+            <h5>General</h5>
+            aaainc@gmail.com
+          </div>
+          <div class="contactDetail">
+            <h5>Career</h5>
+            career.aaainc@gmail.com
+          </div>
+          <div class="contactDetail">
+            <h5>Follow us</h5>
+            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+            <a href="#"><i class="fab fa-twitter icon"></i></a>
+            <a href="#"><i class="fab fa-instagram icon"></i></a>
+            <a href="#"><i class="fab fa-youtube icon"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sendMessage">
+        <button
+          type="button"
+          class="btn btn-light sendMessageButton"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
+          Send Message
+        </button>
+        <!-- Send message modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">Name:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contactNo" class="col-form-label"
+                      >Contact Number:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="contactNo"
+                      name="contactNo"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn modalSendButton">
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mapDiv">
+        <a
+          target="_blank"
+          href="https://www.google.com/maps/place/All+About+Architecture+Inc./@12.9713893,77.6463506,15z/data=!4m5!3m4!1s0x0:0x9f1bfc4c67ad0e70!8m2!3d12.9713893!4d77.6463506"
+        >
+          <img
+            class="mapImage"
+            src="https://res.cloudinary.com/ajithvault/image/upload/v1575606561/AAA/map_duxksz.png"
+            alt="map"
+          />
+        </a>
+      </div>
+    </div>
     <!-- Bootstrap scripts -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -95,5 +220,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <!-- Contact script -->
+    <script src="../js/contact.js"></script>
   </body>
 </html>
